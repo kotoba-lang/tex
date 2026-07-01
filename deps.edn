@@ -1,0 +1,13 @@
+{:paths ["src"]
+ :version "0.1.0"
+ ;; kotoba-lang/tex — EDN-first LaTeX document generator, sibling of
+ ;; kotoba-lang/html, kotoba-lang/css and svg.core. Zero third-party runtime
+ ;; deps; every namespace .cljc (JVM / SCI / ClojureScript / GraalVM /
+ ;; kotoba-WASM). Generation only — no TeX engine/compiler.
+ :deps {}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
+         :main-opts ["-m" "cognitect.test-runner"]
+         :exec-fn cognitect.test-runner.api/test}}}
