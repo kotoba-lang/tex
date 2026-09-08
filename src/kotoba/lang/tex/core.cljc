@@ -39,7 +39,7 @@
     children are rendered and concatenated as siblings, with no wrapping tag.
     `document` returns a fragment (`\\documentclass{...}` followed by a
     sibling `document` environment)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ---------------------------------------------------------------------------
 ;; Escaping
