@@ -85,5 +85,5 @@ io.github.kotoba-lang/tex {:git/sha "<sha>"}
 ## Verify
 
 ```sh
-clojure -M:test
+kbb -M:test
 ```
